@@ -1,0 +1,692 @@
+:root{
+    --cor-fonte: #090915;
+    --cor-fonte-secundaria: #FFFFFF;
+    --cor-fundo: #F6F6FC;
+    --cor-primaria: #2828DD;
+    --cor-secundaria: #c8b7a749;
+    --cor-accent: #7EB898;
+
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor-fonte);
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+#logo{
+    width: 4rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 2rem auto;
+    align-items: center;
+    gap: 2rem;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input[type=text]{
+    color: var(--cor-fonte);
+    padding: 1rem;
+}
+
+form input[type=submit]{
+    padding: 1rem;
+}
+
+input[type=submit]{
+    text-transform: uppercase;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte-secundaria);
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte-secundaria);
+}
+
+button {
+    background-color: var(--cor-accent);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+}
+
+.jogador{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.jogador p{
+    width: 60%;
+    border-right: 1px solid black;
+}
+
+.jogador p{
+    width: 60%;
+    border-right: 1px solid black;
+}
+
+.tituloslista{
+    border-bottom: 1px solid black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.gridplayers{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+
+.player:nth-of-type(odd){
+    background-color: var(--cor-secundaria);
+}
+
+.player:nth-of-type(even){
+    background-color: var(--);
+}
+
+.player{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 15% 35%;
+    grid-row: auto;
+    padding: 1rem;
+    border: 1.4px solid var(--cor-secundaria);
+}
+
+.player h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/* .player input{
+    
+
+} */
+
+.buttons{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.lista{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 50% 15% 35%;
+    grid-row: auto;
+    text-align: center;
+    background-color: var(--cor-accent);
+}
+
+.titulos{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid var(--cor-fonte);
+    padding: 0.5rem 0;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+}
+
+.numerojogadores{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-accent);
+    padding: 1rem;
+}
+
+.numerojogadores span{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.numerojogadores p{
+    background-color: var(--cor-fundo);
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+.valordopix{
+    width: 33%;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-accent);
+    padding: 1rem
+}
+
+.valordopix span{
+    text-transform: uppercase;
+}
+
+#valorpix{
+    margin-left: 0.4rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--cor-fonte);
+}
+
+#submitvalorpix{
+    padding: 0.3rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 0.6rem;
+    height: 3rem;
+    width: 5rem;
+}
+
+.pixzada{
+    display: flex;
+    align-items: center;
+}
+.pixzada label{
+    font-size: 1.3rem;
+}
+
+.valortotal{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-accent);
+    padding: 1rem
+}
+
+.valortotal span{
+    text-transform: uppercase;
+}
+
+.valortotalpix{
+    text-align: center;
+}
+
+.valortotal p{
+    background-color: var(--cor-fundo);
+    padding: 1rem;
+    color: var(--cor-fonte);
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+.editbutton{
+width: 40%;
+}
+
+.deletebutton{
+    width: 40%;
+}
+
+.divform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submitjogador{
+    width: auto;
+    display: flex;
+    border-radius: 8px;
+}
+
+#formsorteio{
+    display: flex;
+    width: 25vw;
+    padding: 1rem;
+    margin: 3rem auto;
+    align-items: center;
+   
+}
+
+#numerojogadores{
+    height: 3rem;
+    width: 5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--cor-fonte);
+}
+
+#numerotimes{
+    height: 3rem;
+    width: 5rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.inputssorteio{
+    background-color: var(--cor-accent);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 5rem;
+}
+
+.inputssorteiodiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.listasorteada{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.times{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 10rem;
+    height: fit-content;
+    background-color: var(--cor-accent);
+    padding: 2rem;
+}
+
+.playerslist{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: var(--cor-secundaria);
+    width: 90vw;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.timesSorteados{
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--cor-accent);
+}
+
+.timeinfo{
+    background-color: rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-radius: 8px;
+    padding: 1rem 0;
+}
+
+.timeinfo h2{
+    color: var(--cor-fonte-secundaria);
+}
+
+@media screen and (max-width: 599px) {
+    nav{
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        display: none;
+    }
+    #burgermenu{
+        font-size: 2rem;
+    }
+
+    .menu ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li{
+        background-color: var(--cor-accent);
+        border-bottom: 1px solid black;
+        padding: 1rem;
+        
+    }
+
+    .menu li:hover a{
+        background-color: #5e3bcc;
+        color: white;
+    }
+
+    .menu li:hover{
+        background-color: #5e3bcc;
+        color: white;
+    }
+
+
+    .activestatus{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 4rem;
+        list-style: none;
+        font-size: 1.5rem;
+    }
+
+    #formbagre{
+        width: 90%;
+    }
+
+    .container{
+        width: 95vw;
+    }
+
+    .lista{
+        width: 100%;
+    }
+
+    .gridplayers{
+        width: 100%;
+    }
+
+    .player{
+        width: 95vw;
+        padding: 0.5rem 0;
+    }
+
+    .player h1{
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .editbutton{
+        width: 45%;
+    }
+
+    .deletebutton{
+        width: 45%;
+    }
+
+    #submitjogador{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+    }
+
+    .numerojogadores{
+        width: 100%;
+    }
+
+    .valordopix{
+        width: 100%;
+    }
+
+    .valortotal{
+        width: 100%;
+        text-align: center;
+    }
+
+    .listasorteada{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .times{
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    .inputssorteio{
+        background-color: var(--cor-accent);
+        padding: 1rem 4rem;
+        border-radius: 10px;
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+    }
+    
+    .inputssorteiodiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        text-wrap: nowrap;
+    }
+    
+
+}
+
+@media screen and (min-width: 600px) {
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    nav ul{
+        list-style: none;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    #burgermenu{
+        display: none;
+    }
+
+    .playerslist{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .playerslist{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* A imagem ocupa 100% da tela */
+.full-screen-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Mantém a proporção da imagem e cobre toda a tela */
+    z-index: -1;  /* Garante que o conteúdo da página fique sobre a imagem */
+}
+
+/* Estilos gerais do body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Barra de navegação */
+.navbar {
+    background: #2828DD;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #e0e0e0;
+}
+
+/* Container de conteúdo */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;  /* Garante que o conteúdo fique acima da imagem */
+}
+
+h1, h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.container__campo {
+    margin-bottom: 20px;
+}
+
+.container__campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+    border-color: #2828DD;
+    outline: none;
+}
+
+/* Botões */
+button {
+    background: #2828DD;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2828DD;
+}
+
+/* Resultado */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+/* Listas de nomes e times */
+.names-list, .teams-list {
+    margin-top: 20px;
+}
+
+.names-list ul, .teams-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.names-list li, .teams-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.names-list li:hover, .teams-list li:hover {
+    background: #f1f1f1;
+}
+
+button {
+    margin-left: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .navbar ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}

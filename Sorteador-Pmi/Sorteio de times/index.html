@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73880ad22b.js" crossorigin="anonymous"></script>
+    <title>Jogador Caro</title>
+</head>
+<body>
+     <!-- Imagem de fundo que ocupa toda a tela -->
+     <img src="img/code.png" alt="Imagem de Fundo" class="full-screen-image">
+    <nav class="navbar">
+        <ul>
+            <li><a href="sorteio_numeros.html">Sorteio de Números</a></li>
+            <li><a href="amigo_secreto.html">Amigo Secreto</a></li>
+            <li><a href="index.html">Escolha de Time de Futebol</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <nav>
+            <img id="logo" src="./images/logo.png" alt="logo">
+            <img style="width: 2rem;" id="burgermenu" src="./images/menuburger1.png" alt="menu">
+            <ul class="menu">
+                <li><a href="./index.html">Lista</a></li>
+                <li><a href="./sorteio.html">Sorteio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="margin-top: 1rem; text-align: center;">Lista de Jogadores</h1>
+        <div class="container">
+            <form id="formbagre" action="">
+                <input type="text" name="nome" id="inputnome" placeholder="Nome do Jogador" required>
+                <div class="divform">
+                    <!-- <label for="tier">Nível:</label>
+                    <input type="range" name="bagrometro" id="inputtier" min="1" max="3"> -->
+                    <input type="submit" value="Adicionar" id="submitjogador">
+                </div>
+                
+            </form>
+            <div class="lista">
+                <span class="jogadortitulo titulos">Jogador</span>
+                <span class="pixtitulo titulos">Pix</span>
+                <span class="editardeletartitulo titulos">Editar ou Deletar</span>
+                </div>
+            <div class="gridplayers">
+            </div>
+            <div class="infos">
+                <div class="numerojogadores">
+                    <span>N° de Jogadores:</span>
+                    <p class="valorjogadorestotal"></p>
+                </div>
+                <div class="valordopix">
+                    <span>Valor no Pix</span>
+                    <div class="pixzada">
+                    <label>R$</label><input type="number" name="valorpix" id="valorpix" max="20" min="0">
+                    <input type="submit" value="Atualizar" id="submitvalorpix">
+                    </div>
+                </div>
+                <div class="valortotal">
+                    <span>Total pago:</span>
+                    <p class="valortotalpix">R$</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+    <script src="./codigo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</body>
+</html>

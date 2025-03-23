@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73880ad22b.js" crossorigin="anonymous"></script>
+    <title>Sorteio de Jogadores</title>
+</head>
+<body>
+     <!-- Imagem de fundo que ocupa toda a tela -->
+     <img src="img/code.png" alt="Imagem de Fundo" class="full-screen-image">
+    <nav class="navbar">
+        <ul>
+            <li><a href="sorteio_numeros.html">Sorteio de Números</a></li>
+            <li><a href="amigo_secreto.html">Amigo Secreto</a></li>
+            <li><a href="index.html">Escolha de Time de Futebol</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <nav>
+            <img id="logo" src="./images/logo.png" alt="logo">
+            <img style="width: 2rem;" id="burgermenu" src="./images/menuburger1.png" alt="menu">
+            <ul class="menu">
+                <li><a href="./index.html">Lista</a></li>
+                <li><a href="./sorteio.html">Sorteio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="margin-top: 1rem; text-align: center;">Sorteio dos Jogadores</h1>
+        <form id="formsorteio" action="">
+            <div class="inputssorteio">
+                <div class="inputssorteiodiv">
+                    <label for="numerojogadores">Jogadores por Time:</label>
+                    <input type="number" name="numerojogadores" id="numerojogadores" min="0" required>
+                    <label for="numerotimes">Número de Times:</label>
+                    <input type="number" name="numerotimes" id="numerotimes" min="0" required>
+                </div>
+            </div>
+            <input type="submit" value="Sortear">
+        </form>
+
+        <div class="playerslist">
+            <h1>Realize o Sorteio</h1>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+    <script src="./sorteio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</body>
+</html>
